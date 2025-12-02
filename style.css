@@ -1,0 +1,100 @@
+/* Reset nhẹ */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.img-music {
+    max-width: 30%;
+    border-radius: 50%;
+}
+
+.flex-direction-row {
+    flex-direction: row !important;
+}
+
+#videoContainer {
+    display: flex;
+    flex-direction: column;   /* xếp con theo cột */
+    justify-content: center;  /* canh giữa theo chiều dọc */
+    align-items: center;       /* canh giữa theo chiều ngang */
+}
+
+#progress-button > svg {
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+}
+#progress-button > svg:hover {
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+}
+
+#progress-bar {
+    display: flex;
+    height: 8px;
+    background: #e9e9e9;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    position: relative;
+}
+
+#progress-follow {
+    border-radius: 5px 0px  0px 5px;
+    width: 0px;              /* cho dễ nhìn */
+    height: 8px;
+    background: black;        /* đổi từ color thành background */
+    position: absolute;
+    top: 50%;                 /* đưa vào giữa */
+    left: 0%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+#progress-handler {
+    width: 12px;              /* cho dễ nhìn */
+    height: 12px;
+    background: black;        /* đổi từ color thành background */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;                 /* đưa vào giữa */
+    left: 0%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
